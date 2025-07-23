@@ -25,50 +25,39 @@ A lightweight and customizable monitoring tool designed to keep track of system 
 ### 1. Clone the Repository
 
 git clone https://github.com/vShanky/Monitoring_Tool.git
+
 cd Monitoring_Tool
-🧰 2. Install prerequisites
+
+
+## 🧰 2. Install prerequisites
 Check the repo’s README for language or dependencies. Common patterns include:
 
 For Python:
+# python3 -m venv venv
+# source venv/bin/activate
+# pip install -r requirements.txt
 
-bash
-Copy
-Edit
-python3 -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
 For Node.js:
+# npm install
 
-bash
-Copy
-Edit
-npm install
 For Java/.NET: Check for pom.xml, build.gradle, or .csproj and use respective build tools (Maven, Gradle, dotnet restore).
 
 If there’s no requirements.txt or package.json, inspect the top-level files or documentation to determine the stack.
 
-⚙️ 3. Configure settings/environment
+## ⚙️ 3. Configure settings/environment
 Look for:
 
-.env.example, .env.sample
+  .env.example, .env.sample
+  config.yaml, config.json
 
-config.yaml, config.json
-
-Steps:
-
+# Steps:
 Copy the example config:
 
-bash
-Copy
-Edit
-cp .env.example .env
+# cp .env.example .env
+
 Edit .env or config file to set:
-
-API endpoints
-
-Database connections
-
-Credentials
-
-Any other runtime options
+# API endpoints
+# Database connections
+# Credentials
+# Any other runtime options
 
