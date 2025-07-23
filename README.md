@@ -46,3 +46,51 @@ Edit .env or config file to set:
       Database connections
       Credentials
       Any other runtime options
+
+
+🧰 2. Install prerequisites
+Check the repo’s README for language or dependencies. Common patterns include:
+
+For Python:
+
+bash
+Copy
+Edit
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+For Node.js:
+
+bash
+Copy
+Edit
+npm install
+For Java/.NET: Check for pom.xml, build.gradle, or .csproj and use respective build tools (Maven, Gradle, dotnet restore).
+
+If there’s no requirements.txt or package.json, inspect the top-level files or documentation to determine the stack.
+
+⚙️ 3. Configure settings/environment
+Look for:
+
+.env.example, .env.sample
+
+config.yaml, config.json
+
+Steps:
+
+Copy the example config:
+
+bash
+Copy
+Edit
+cp .env.example .env
+Edit .env or config file to set:
+
+API endpoints
+
+Database connections
+
+Credentials
+
+Any other runtime options
+
