@@ -22,7 +22,7 @@ A lightweight and customizable monitoring tool designed to keep track of system 
 
 ## 🔧 Setup Instructions
 
-### 1. Clone the Repository
+## 1. Clone the Repository
 
 git clone https://github.com/vShanky/Monitoring_Tool.git
 
