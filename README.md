@@ -24,30 +24,8 @@ A lightweight and customizable monitoring tool designed to keep track of system 
 
 ### 1. Clone the Repository
 
-```bash
 git clone https://github.com/vShanky/Monitoring_Tool.git
 cd Monitoring_Tool
-
-### 2. Install prerequisites
-**For Node.js:**
-npm install
-
-⚙️ 3. Configure settings/environment
-Look for:
-      .env.example, .env.sample
-      config.yaml, config.json
-
-Steps:
-Copy the example config:
-      cp .env.example .env
-
-Edit .env or config file to set:
-      API endpoints
-      Database connections
-      Credentials
-      Any other runtime options
-
-
 🧰 2. Install prerequisites
 Check the repo’s README for language or dependencies. Common patterns include:
 
