@@ -1,0 +1,16 @@
+services:
+  website-monitor:
+    container_name: website-monitor
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "1234:1234"
+    env_file:
+      - .env
+    restart: always
+    volumes:
+      - .:/app
+    working_dir: /app
+    command: node index.js
+

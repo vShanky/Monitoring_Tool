@@ -1,28 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Website Monitor</title>
-  <link rel="stylesheet" href="/styles.css">
+  <title>Admin Panel</title>
 </head>
 <body>
-  <h1>Website Monitor</h1>
-
-  <form action="/add" method="POST">
-    <input type="url" name="url" placeholder="Enter website URL" required>
-    <button type="submit">Add Website</button>
+  <h2>Website Monitor Admin</h2>
+  
+  <!-- ✅ Add Logout Button -->
+  <form method="GET" action="/logout" style="margin-bottom: 20px;">
+    <button type="submit">Sign Out</button>
   </form>
 
+  <h3>Monitored Websites</h3>
   <ul>
-    <% websites.forEach(url => { %>
+    <% websites.forEach(function(site) { %>
       <li>
-        <%= url %>
-        <form action="/remove" method="POST" style="display:inline;">
-          <input type="hidden" name="url" value="<%= url %>">
+        <%= site %>
+        <form method="POST" action="/remove" style="display:inline;">
+          <input type="hidden" name="url" value="<%= site %>">
           <button type="submit">Remove</button>
         </form>
       </li>
-    <% }) %>
+    <% }); %>
   </ul>
+
+  <h3>Add New Website</h3>
+  <form method="POST" action="/add">
+    <input type="url" name="url" required>
+    <button type="submit">Add</button>
+  </form>
 </body>
 </html>
+
